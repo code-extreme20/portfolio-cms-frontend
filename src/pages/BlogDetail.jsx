@@ -3,7 +3,9 @@ import { ArrowLeft, CalendarDays, Clock3, Tag } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import api from "../services/api";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL =
+  import.meta.env.VITE_BACKEND_URL ||
+  "https://portfolio-cms-backend-2.onrender.com";
 
 function BlogDetail() {
     const { slug } = useParams();

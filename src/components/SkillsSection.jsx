@@ -57,6 +57,9 @@ function SkillsSection() {
   }, [skills]);
 
   const categories = Object.entries(groupedSkills);
+  console.log("SKILLS:", skills);
+  console.log("GROUPED SKILLS:", groupedSkills);
+  console.log("CATEGORIES:", categories);
 
   return (
     <section
